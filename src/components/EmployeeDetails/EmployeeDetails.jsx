@@ -39,6 +39,8 @@ export default function EmployeeDetails() {
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber)
 
+
+
   return (
     <div>
       <Header />
@@ -76,13 +78,15 @@ export default function EmployeeDetails() {
                 </tr>
               </thead>
               <tbody>
-                {currentRecords.map((elem, index) => (
+                {currentRecords.map((elem, index) => {
+                  const serialNumber = indexOfFirstRecord + index + 1;
+                  return(
                   <tr
                     key={elem.Employee_id}
                     className="employee-row"
                     onClick={() => handleeEmployeeSelect(elem.Employee_id)}
                   >
-                    <td>{index + 1}</td>
+                    <td>{serialNumber}</td>
                     <td>{elem.Employee_id}</td>
                     <td>
                       <img
@@ -102,12 +106,12 @@ export default function EmployeeDetails() {
                             : 'left-button'
                         }
                       >
-                        {elem.status === 'working' ? 'Working' : 'Left'}
+                        {elem.status}
                       </div>{' '}
                     </td>
                     <SlOptionsVertical style={{ marginTop: '12px' }} />
                   </tr>
-                ))}
+                )})}
               </tbody>
             </table>
             <div className="pagination-sec">
@@ -123,11 +127,12 @@ export default function EmployeeDetails() {
                   <span onClick={() => paginate(currentPage - 1)}>
                     <IoIosArrowBack />
                   </span>
-                  <span>{currentPage}</span>
+                  <span style={{marginTop:"3px"}}>{currentPage}</span>
                   <span onClick={() => paginate(currentPage + 1)}>
                     <IoIosArrowForward />
                   </span>
                 </div>
+
               </div>
             </div>
           </div>

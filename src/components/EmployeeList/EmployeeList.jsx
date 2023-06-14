@@ -111,7 +111,10 @@ export default function EmployeeList() {
                   {/* avatar info */}
 
                   <div className="avatar-info">
-                    <img src={data.image_url} alt="employee" />
+
+                    <img src={data.image_url} alt="employee"  />
+                    <div className="avatar-badge">Permanent</div>
+
                     <div className="avatar-details">
                       <div>
                         <p>Emp ID: </p> <h5>{data.Employee_id}</h5>

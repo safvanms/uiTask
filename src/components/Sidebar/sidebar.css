@@ -1,5 +1,5 @@
 .sidebar {
-  width: 200px;
+  width: 200px ;
   height: 100vh;
   padding: 5px;
   color: #808080;
@@ -16,6 +16,7 @@
   justify-content: flex-start;
   padding: 8px 20px;
   border-radius: 6px;
+  margin-bottom: 5px;
 }
 
 .sidebar-option:hover {
@@ -54,7 +55,7 @@
      display: flex;
      flex-direction: column;
      align-items: flex-start;
-     margin-left: 25%;
+     margin-left: 35px;
 }
 
 .list ul li {
@@ -66,7 +67,6 @@
 
 
 .active{
-     color: #556ee6 !important;
-     list-style: disc;
-     background-color: yellow;
+     color: #556ee6;
+     /* list-style: disc; */
 }

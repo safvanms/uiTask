@@ -21,7 +21,7 @@ const dropdownList = [
 ]
 
 export default function Sidebar() {
-  const [spreadOption, setSpreadOption] = useState(false)
+  const [spreadOption, setSpreadOption] = useState(true)
 
   const viewOptions = () => {
     setSpreadOption(!spreadOption)
@@ -59,13 +59,13 @@ export default function Sidebar() {
           {spreadOption &&
             dropdownList.map((list) => (
               <ul key={list.name}>
-                <NavLink
+               <li> <NavLink
                   activeClassName="active"
                   to={list.link}
                   style={{ textDecoration: 'none' }}
                 >
-                  <li>{list.name}</li>
-                </NavLink>
+                  {list.name}
+                </NavLink></li>
               </ul>
             ))}
         </div>

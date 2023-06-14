@@ -58,7 +58,7 @@
       "PF_number": "PF003",
       "blood_group": "O+",
       "image_url": "https://picsum.photos/300/300",
-      "status": "left",
+      "status": "leave",
       "floor":"2"
 
     },
@@ -100,7 +100,7 @@
       "PF_number": "PF005",
       "blood_group": "B+",
       "image_url": "https://picsum.photos/300/300",
-      "status": "working",
+      "status": "leave",
       "floor":"1"
 
     }
@@ -122,7 +122,7 @@
       "PF_number": "PF006",
       "blood_group": "O+",
       "image_url": "https://picsum.photos/300/300",
-      "status": "left",
+      "status": "leave",
       "floor":"2"
 
     },
