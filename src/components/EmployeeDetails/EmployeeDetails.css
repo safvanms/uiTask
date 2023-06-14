@@ -1,0 +1,147 @@
+.home-page {
+  display: flex;
+  padding: 10px;
+}
+.home-section {
+  width: 100%;
+}
+
+.page-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding-inline: 5px;
+  color: #808080;
+  font-weight: normal;
+  margin-top: 15px;
+}
+
+
+.employee-btns{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+
+}
+
+.employee-btns button{
+border: none;
+background-color: #556EE6;
+border-radius: 3px;
+color: #fff;
+padding: 12px;
+font-size: 12px;
+font-family: 'Montserrat';
+}
+
+.employee-btns div{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+.employee-btns div span:nth-child(1){
+background-color: #d0d0d07b;
+border-radius: 3px;
+padding: 2px;
+}
+
+.employee-row {
+  background-color: #fff;
+  display: table-row; 
+}
+
+.employee-row:hover {
+  background-color: #f1f0f0; 
+  cursor: pointer; 
+}
+
+.employee-row td {
+  padding: 2px 2px;
+  display: table-cell; 
+  padding-inline: 10px;
+}
+
+.table-container {
+  border: 1px solid #c8c7c7;
+  border-radius: 10px 10px 0px 0px ;
+  display: table; 
+  width: 100%; 
+}
+
+.custom-table {
+  background-color: #f8f9fa;
+  display: table; 
+  width: 100%;
+}
+
+.table-head-options th {
+  text-align: left;
+  padding: 12px 10px;
+border-bottom: 1px solid #808080;
+}
+
+.table-head {
+  display: table-header-group; 
+}
+
+.employee-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.working-button {
+  background-color: #34C38F;
+  padding:5px;
+  color: white;
+  border-radius: 3px;
+  width: 60px;
+}
+
+.left-button {
+  text-align: center;
+  background-color: rgb(234, 166, 57);
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  width: 60px;
+}
+
+.pagination-sec{
+  padding: 30px;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination-right-sec{
+display: flex;
+gap: 20px;
+padding: 2px;
+border-radius: 3px;
+}
+
+.pagination-page{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #808080;
+  padding: 2px;
+  border-radius: 3px; 
+}
+
+.pagination-control{
+  display: flex;
+  gap: 5px;
+  border: 1px solid #808080;
+  border-radius: 3px; 
+}
+
+.pagination-control span:nth-child(odd){
+background-color: #d0d0d0;
+padding-top: 2px;
+font-size: 16px;
+}
